@@ -96,6 +96,9 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+$memcached_servers = array(
+    'default' => array('localhost:' . getenv("MEMCACHESHIM_PORT"))
+);
 
 /* That's all, stop editing! Happy blogging. */
 
